@@ -8,11 +8,16 @@
     "packages/*"
   ],
   "devDependencies": {
+    "esbuild": "^0.11.19",
+    "ts-node": "^9.1.1",
     "typescript": "^4.2.4"
   },
   "scripts": {
     "app": "yarn workspace @my-app/app",
     "common": "yarn workspace @my-app/common",
-    "server": "yarn workspace @my-app/server"
+    "server": "yarn workspace @my-app/server",
+    "build": "ts-node ./scripts/build.ts",
+    "serve": "node ./packages/server/dist/index.js",
+    "docker": "docker build . -t my-app"
   }
 }
