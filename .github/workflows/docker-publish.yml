@@ -20,5 +20,5 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
           registry: docker.pkg.github.com
-          repository: SJanJan/pdi/myapp
+          repository: sjanjan/pdi/myapp
           tag_with_ref: true
